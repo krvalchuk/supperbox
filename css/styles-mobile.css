@@ -1,0 +1,125 @@
+@media only screen and (min-width: 680px) and (max-width: 1024px){
+    .header-wrapper .text-wrapper .promo-text#taste{
+        padding-top: 13vh;
+    }
+
+    .header-wrapper .text-wrapper .promo-text{
+        padding-top: 6vh;
+    }
+
+    .section {
+        padding: 5vh 0;
+        width: 100%;
+    }
+
+    .section-heading {
+        margin-top: 4vh;
+        margin-bottom: 4vh;
+        font-size: 3.2vw;
+    }
+
+    .section.about .description {
+        /*font-size: 3.5vw;*/
+        margin-bottom: 3vh;
+    }
+
+    .section.about .description .first-article{
+        margin-bottom: 3vh !important;
+    }
+
+    /*.section.benefits {*/
+        /*width: 815px;*/
+    /*}*/
+
+    .section.benefits .benefit {
+        padding: 0 1vw 4vh 3vw;
+    }
+
+    .section.benefits .benefit img {
+        /*width: 11vw;*/
+    }
+
+    .section.benefits .benefit .text {
+        /*font-size: 4vw;*/
+        font-size: 2.9vw;
+    }
+
+    .section.benefits .benefit .text .benefit-description {
+        /*font-size: 3vw;*/
+        font-size: 2.5vw;
+    }
+
+    .green-button {
+        padding: 3vh 10vw 0 10vw;
+    }
+
+    .green-button .btn {
+        font-size: 4.5vw;
+        padding: 2vh 0;
+    }
+
+    .section.blog .author {
+        /*font-size: 4vw;*/
+        margin-bottom: 5%;
+    }
+
+    .section.blog .comments {
+        margin-bottom: 7vh;
+    }
+
+    .section.blog .comments .arrow img {
+        width: 3vw;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -o-transition: none;
+        transition: none;
+    }
+
+    .section.blog .comments .comment {
+        /*font-size: 3vw;*/
+    }
+
+    .section.blog .feedback-buttons a{
+        padding: 1vh 0;
+    }
+
+    .section.blog .feedback-buttons .user-feedback{
+        font-size: 2.5vw;
+        line-height: 2.5vh;
+    }
+
+    .section.blog .feedback-buttons .questionnaire{
+        font-size: 2.5vw;
+        line-height: 2.5vh;
+    }
+
+    .footer {
+        width: 800px;
+        padding: 5vh 0 2vh 0;
+    }
+
+    .red-button {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    .red-button .btn {
+        font-size: 4.5vw;
+        padding: 2vh 0;
+    }
+}
+
+@media (pointer: coarse){
+    .green-button .btn {
+        padding: 2vh 0;
+        color: #ffffff;
+        background-color: #2e7d32;
+        cursor: pointer;
+    }
+
+    .section.blog .feedback-buttons .user-feedback {
+        background-color: #2e7d32;
+        color: white;
+    }
+}
