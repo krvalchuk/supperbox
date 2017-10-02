@@ -1,14 +1,14 @@
-@media only screen and (min-width: 680px) and (max-width: 1024px){
-    .header-wrapper .text-wrapper .promo-text#taste{
+@media only screen and (min-width: 680px) and (max-width: 1024px) {
+    .header-wrapper .text-wrapper .promo-text#taste {
         padding-top: 13vh;
     }
 
-    .header-wrapper .text-wrapper .promo-text{
+    .header-wrapper .text-wrapper .promo-text {
         padding-top: 6vh;
     }
 
     .section {
-        padding: 5vh 0;
+        padding: 5vh 5vw;
         width: 100%;
     }
 
@@ -19,24 +19,23 @@
     }
 
     .section.about .description {
-        /*font-size: 3.5vw;*/
+        font-size: 2.5vw;
         margin-bottom: 3vh;
     }
 
-    .section.about .description .first-article{
+    .section.about .description .first-article {
         margin-bottom: 3vh !important;
     }
 
     /*.section.benefits {*/
-        /*width: 815px;*/
+    /*width: 815px;*/
     /*}*/
-
     .section.benefits .benefit {
-        padding: 0 1vw 4vh 3vw;
+        padding: 1vh 10vw 4vh 13vw;
     }
 
     .section.benefits .benefit img {
-        /*width: 11vw;*/
+        width: 8vw;
     }
 
     .section.benefits .benefit .text {
@@ -50,12 +49,22 @@
     }
 
     .green-button {
-        padding: 3vh 10vw 0 10vw;
+        padding: 4vh 13vw 0 16vw;
+        /*padding: 3vh 10vw 0 10vw;*/
     }
 
     .green-button .btn {
-        font-size: 4.5vw;
+        font-size: 4vw;
         padding: 2vh 0;
+    }
+
+    .section.map .map-wrapper {
+        margin: 3vh 8vw 0 8vw;
+    }
+
+    .section.blog, .footer {
+        padding: 5vh 8vw;
+        width: 100%;
     }
 
     .section.blog .author {
@@ -79,23 +88,14 @@
         /*font-size: 3vw;*/
     }
 
-    .section.blog .feedback-buttons a{
+    .section.blog .feedback-buttons a {
         padding: 1vh 0;
     }
 
-    .section.blog .feedback-buttons .user-feedback{
+    .section.blog .feedback-buttons .user-feedback,
+    .section.blog .feedback-buttons .questionnaire {
         font-size: 2.5vw;
-        line-height: 2.5vh;
-    }
-
-    .section.blog .feedback-buttons .questionnaire{
-        font-size: 2.5vw;
-        line-height: 2.5vh;
-    }
-
-    .footer {
-        width: 800px;
-        padding: 5vh 0 2vh 0;
+        line-height: 4vh;
     }
 
     .red-button {
@@ -105,12 +105,51 @@
     }
 
     .red-button .btn {
-        font-size: 4.5vw;
+        font-size: 4vw;
         padding: 2vh 0;
     }
 }
 
-@media (pointer: coarse){
+@media only screen and (min-width: 320px) and (max-width: 680px) {
+    .section {
+        padding: 4vh 4vw;
+    }
+
+    .section-heading {
+        margin-top: 0;
+        margin-bottom: 3vh;
+    }
+
+    .section.about .description.first-article {
+        margin-bottom: 1.5vh;
+    }
+
+    .section.about .description {
+        margin-bottom: 1vh;
+    }
+
+    .green-button {
+        padding: 2vh 13vw 0 16vw;
+    }
+
+    .section.map .map-wrapper {
+        margin: 2vh 8vw 0 8vw;
+    }
+
+    .section.blog .feedback-buttons .user-feedback,
+    .section.blog .feedback-buttons .questionnaire {
+        font-size: 2.5vw;
+        line-height: 2.5vh;
+        background-color: red;
+    }
+
+    .section.blog, .footer {
+        padding: 2vh 8vw;
+        width: 100%;
+    }
+}
+
+@media (pointer: coarse) {
     .green-button .btn {
         padding: 2vh 0;
         color: #ffffff;
