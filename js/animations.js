@@ -1,6 +1,6 @@
-var imgArray = ['couple-cooking.png',
-    'meal.png',
-    'present.png'
+var imgArray = ['couple-cooking.jpg',
+    'meal.jpg',
+    'present.jpg'
 ];
 
 // var slideshow2ImgArray = ['meal.png'];
@@ -48,7 +48,7 @@ function showText(counter) {
 }
 
 function changeImg(counter, firstSlideIsVisible) {
-    var nextBG = "url(../SupperBox-LandingPage/images/" + imgArray[counter] + ")";
+    var nextBG = "url(./images/" + imgArray[counter] + ")";
     var currentSlideId = firstSlideIsVisible ? '#slideshow' : '#slideshow2';
     var nextSlideId = firstSlideIsVisible ? '#slideshow2' : '#slideshow';
 
@@ -59,7 +59,7 @@ function changeImg(counter, firstSlideIsVisible) {
 
 function playImgSlide() {
     var counter = 0;
-    var nextBG = "url(../SupperBox-LandingPage/images/" + imgArray[counter] + ")";
+    var nextBG = "url(./images/" + imgArray[counter] + ")";
     var firstSlideIsVisible = true;
 
     $('#slideshow').css("background-image", nextBG);

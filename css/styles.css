@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Flash Back';
+    src: url('../resources/flash-back-font.ttf');
+    src: local('Flash Back - Demo'), url('../resources/flash-back-font.ttf') format('truetype');
+}
+
 body {
     text-align: center;
     font-family: 'Raleway', sans-serif;
@@ -18,9 +24,9 @@ section {
 }
 
 /*#slideshow{*/
-    /*transition: opacity .25s ease-in-out;*/
-    /*-moz-transition: opacity .25s ease-in-out;*/
-    /*-webkit-transition: opacity .25s ease-in-out;*/
+/*transition: opacity .25s ease-in-out;*/
+/*-moz-transition: opacity .25s ease-in-out;*/
+/*-webkit-transition: opacity .25s ease-in-out;*/
 /*}*/
 
 .en-text {
@@ -40,7 +46,7 @@ section {
     padding: 0;
 }
 
-.header-wrapper .image-wrapper{
+.header-wrapper .image-wrapper {
     opacity: 0;
     position: absolute;
     height: 100%;
@@ -57,7 +63,7 @@ section {
     z-index: -1;
 }
 
-.header-wrapper .text-wrapper{
+.header-wrapper .text-wrapper {
     width: 100%;
     height: 40vw;
     /*-moz-transition: all 1s;*/
@@ -94,7 +100,7 @@ section {
     font-size: 3vw;
 }
 
-.header-wrapper .text-wrapper .promo-text{
+.header-wrapper .text-wrapper .promo-text {
     display: none;
     /*opacity: 0;*/
     color: #ffffff;
@@ -106,7 +112,7 @@ section {
     padding-left: 5vw;
 }
 
-.header-wrapper .text-wrapper .promo-text#taste{
+.header-wrapper .text-wrapper .promo-text#taste {
     padding-top: 45vh;
 }
 
@@ -153,7 +159,7 @@ section {
     margin-bottom: 7vh;
 }
 
-.section.about .description.first-article{
+.section.about .description.first-article {
     margin-bottom: 5vh;
 }
 
@@ -206,7 +212,7 @@ hr {
 }
 
 .green-button {
-    padding: 10vh 10vw 0 10vw;
+    padding: 6vh 10vw 0 10vw;
 }
 
 .green-button .btn {
@@ -217,9 +223,9 @@ hr {
     border: 2px solid #2e7d32;
     border-radius: 0;
     color: #2e7d32;
-    padding: 3vh 0;
-    font-size: 2.6vw;
-    letter-spacing: 0.4vw;
+    padding: 2vw 0;
+    font-size: 2.6vw !important;
+    letter-spacing: 0.2vw;
 }
 
 /*make other active state*/
@@ -234,8 +240,8 @@ hr {
     box-shadow: none;
 }
 
-.section.map .map-wrapper{
-    margin: 3vh 3vw 0 3vw;
+.section.map .map-wrapper {
+    margin: 3vh 6vw 0 6vw;
 }
 
 .section.blog .author {
@@ -285,25 +291,24 @@ hr {
     outline: none;
 }
 
-.section.blog .feedback-buttons > div {
-    text-align: center;
-    position: relative;
+.section.blog .feedback-buttons {
+    display: flex;
+    justify-content: center;
 }
 
 .section.blog .feedback-buttons a {
     display: inline-block;
     font-family: Raleway, sans-serif;
-    width: 100%;
+    width: 60%;
     /*height: 100%;*/
-    background-color: #ffffff;
     border: 2px solid #2e7d32;
     border-radius: 0;
-    color: #2e7d32;
-    padding: 2vh 0;
-    font-size: 2.2vw;
-    letter-spacing: 0.4vw;
+    padding: 2vw 0;
+    font-size: 2vw;
+    letter-spacing: 0.2vw;
     vertical-align: middle;
     text-align: center;
+    transition: all .2s ease-in-out;
 }
 
 .section.blog .feedback-buttons .user-feedback {
@@ -311,8 +316,29 @@ hr {
     color: white;
 }
 
+.section.blog .feedback-buttons .user-feedback:hover {
+    background-color: #ffffff;
+    color: #2e7d32;
+}
+
 .section.blog .feedback-buttons {
-    line-height: 6.5vh;
+    line-height: 5vh;
+}
+
+.section.blog .questionnaire-buttons {
+    margin-top: 2.5vw;
+    font-size: 1.7vw;
+    display: flex;
+    justify-content: center;
+}
+
+.section.blog .questionnaire-buttons .questionnaire {
+    color: #2a2c2d;
+}
+
+.section.blog .questionnaire-buttons .questionnaire:hover {
+    text-decoration: none;
+    color: #2e7d32;
 }
 
 .section.blog .feedback-buttons a,
@@ -329,30 +355,30 @@ hr {
 }
 
 .footer {
-    padding: 8vh 0 2vh 0;
+    padding-top: 8vh;
 }
 
 .red-button {
     margin-left: 2vw;
     margin-right: 2vw;
-    padding: 0 10vw;
+    /*padding: 0 10vw;*/
 }
 
 .red-button .btn {
     /*add regular raleway*/
     font-family: Raleway, sans-serif;
     width: 100%;
-    background-color: #f4511e;
+    background-color: #e24b1c;
     border-radius: 0;
     color: #ffffff;
-    padding: 3vh 0;
-    font-size: 2.6vw;
-    letter-spacing: 0.4vw;
+    padding: 4.5vh 0;
+    font-size: 2.5vw;
+    letter-spacing: 0.1vw;
 }
 
 .red-button .btn:hover {
     cursor: pointer;
-    background-color: #84280f;
+    background-color: #912b00;
     /*box-shadow*/
 }
 
@@ -362,16 +388,30 @@ hr {
     justify-content: space-between;
 }
 
-.footer .info .sign {
+.footer .info .valchuk-sign {
     display: flex;
+    align-items: flex-end;
+    margin-bottom: 1%;
+    font-size: 3.5vw;
+}
+
+.footer .info .valchuk-sign a:hover {
+    color: #26a69a
+}
+
+.footer .info .valchuk-sign a {
+    margin: 0;
+    color: #444444;
+    text-decoration: none;
+    font-family: "Flash Back";
 }
 
 .footer .info .contacts {
     display: flex;
     /*width: 100%;*/
     flex-direction: column;
-    margin-top: 4%;
-    margin-bottom: 2%;
+    margin-top: 5%;
+    margin-bottom: 3%;
 }
 
 .footer .info .contacts .telephone,

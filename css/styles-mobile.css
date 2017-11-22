@@ -1,4 +1,5 @@
-@media only screen and (min-width: 680px) and (max-width: 1024px) {
+@media only screen and (min-device-width: 680px) and (max-device-width: 1024px),
+only screen and (min-width: 680px) and (max-width: 1024px){
     .header-wrapper .text-wrapper .promo-text#taste {
         padding-top: 13vh;
     }
@@ -54,8 +55,8 @@
     }
 
     .green-button .btn {
-        font-size: 4vw;
-        padding: 2vh 0;
+        font-size: 3vw;
+        padding: 4vh 0;
     }
 
     .section.map .map-wrapper {
@@ -64,7 +65,7 @@
 
     .section.blog, .footer {
         padding: 5vh 8vw;
-        width: 100%;
+        width: 90%;
     }
 
     .section.blog .author {
@@ -73,7 +74,7 @@
     }
 
     .section.blog .comments {
-        margin-bottom: 7vh;
+        margin-bottom: 8vh;
     }
 
     .section.blog .comments .arrow img {
@@ -88,14 +89,14 @@
         /*font-size: 3vw;*/
     }
 
-    .section.blog .feedback-buttons a {
-        padding: 1vh 0;
-    }
+    /*.section.blog .feedback-buttons a {*/
+        /*padding: 1vh 0;*/
+    /*}*/
 
     .section.blog .feedback-buttons .user-feedback,
     .section.blog .feedback-buttons .questionnaire {
         font-size: 2.5vw;
-        line-height: 4vh;
+        line-height: 5vh;
     }
 
     .red-button {
@@ -105,14 +106,41 @@
     }
 
     .red-button .btn {
-        font-size: 4vw;
-        padding: 2vh 0;
+        font-size: 3vw;
+        padding: 4vh 0;
+    }
+
+    .footer {
+        padding-bottom: 0;
     }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 680px) {
+@media only screen and (min-width: 680px) and (max-width: 1024px){
+    .footer .info .contacts .text {
+        font-size: 2vw;
+    }
+
+    .footer .info .contacts .telephone, .footer .info .contacts .socials {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        height: 33px;
+    }
+
+    .section.blog .feedback-buttons a {
+        letter-spacing: 0.1vw;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 680px),
+only screen and (min-width: 320px) and (max-width: 680px){
+
+    .header-wrapper .text-wrapper .promo-text {
+        padding-top: 6vh;
+    }
+
     .section {
-        padding: 4vh 4vw;
+        padding: 4vh 0;
     }
 
     .section-heading {
@@ -128,30 +156,78 @@
         margin-bottom: 1vh;
     }
 
+    .section.benefits .benefit {
+        padding: 0 10vw 3vh 12vw;
+    }
+
     .green-button {
-        padding: 2vh 13vw 0 16vw;
+        padding: 2vh 20vw 0 20vw;
+    }
+
+
+    .green-button .btn {
+        padding: 3vw 0;
     }
 
     .section.map .map-wrapper {
-        margin: 2vh 8vw 0 8vw;
+        margin-top: 0;
     }
 
     .section.blog .feedback-buttons .user-feedback,
     .section.blog .feedback-buttons .questionnaire {
         font-size: 2.5vw;
-        line-height: 2.5vh;
-        background-color: red;
+        line-height: 4vw;
     }
 
-    .section.blog, .footer {
+    .section.blog {
         padding: 2vh 8vw;
         width: 100%;
+    }
+
+    .section.blog .comments {
+        margin-bottom: 5vh;
+    }
+
+    .footer{
+        padding: 2vh 9vw;
+        width: 90%;
+    }
+
+    .red-button{
+        padding: 0;
+    }
+
+    .red-button .btn {
+        font-size: 3vw;
+        padding: 2vh 0;
+    }
+
+    .footer {
+        padding-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 680px){
+    .section.blog .feedback-buttons .user-feedback, .section.blog .feedback-buttons .questionnaire {
+        line-height: 4vh;
+    }
+
+    .section.blog .feedback-buttons a {
+        letter-spacing: 0.3vw;
+    }
+
+    .red-button .btn {
+        font-size: 3.5vw;
+    }
+
+    .section.map .map-wrapper {
+        margin: 3vh 8vw 0 8vw;
     }
 }
 
 @media (pointer: coarse) {
     .green-button .btn {
-        padding: 2vh 0;
+        /*padding: 3vw 0;*/
         color: #ffffff;
         background-color: #2e7d32;
         cursor: pointer;
